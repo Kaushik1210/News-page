@@ -1,0 +1,53 @@
+
+body{
+    background-color: rgb(46, 48, 47);
+}
+
+
+
+.card{
+    display: inline-block;
+    min-width: 100%;
+    padding:10px;
+    background-color: rgba(245, 245, 220, 0.411);
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+    
+    
+}
+
+.card img{
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.1s ease-in-out;
+    
+}
+.card img:hover{
+    transform: scale(1.02);
+}
+
+
+
+.article{
+    margin: 10px;
+    
+}
+
+.article h2{
+    color: var(--White);
+}
+
+.article p{
+    font-size: 17px;
+    color: rgb(231, 227, 227);
+}
+
+.article a{
+    text-decoration: none;
+    color: black;
+   padding-top: 50px;
+   font-weight: 700;
+   font-size: 16px;
+}
