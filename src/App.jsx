@@ -9,13 +9,15 @@ const App = () => {
   const[category,setCategory]=useState('general')
 
   useEffect(()=>{
-    const fun=()=> {
-     let url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=14309cb230c0486cbad733fbe7f08401 `
-     fetch(url).then(response=>response.json()).then(data=>setNews(data.articles))
-   }
-     fun()
-     
-   },[country][category])
+    async function fun() {
+      const response = await fetch(`https://gnews.io/api/v4/top-headlines?category=${ category }&lang=en&country=${country}&max=10&apikey=eef9ae0aee21cf6366d9e3b4aac4680c`);
+      const data = await response.json();
+      return setNews(data.articles);      
+      
+    }
+    fun()
+    
+  },[country,category])
   
 
   
@@ -28,7 +30,7 @@ const App = () => {
 
       <div className="newscontainer"> 
         { news.map((elements)=> {
-           return <NewsItems  title={elements.title} src={elements.urlToImage} description={elements.description} url={elements.url} date={elements.date} />
+           return <NewsItems  title={elements.title} src={elements.image} description={elements.description} url={elements.url} date={elements.date} />
         })
       }
       </div>

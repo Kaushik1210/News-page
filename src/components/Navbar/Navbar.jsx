@@ -28,12 +28,11 @@ window.addEventListener("click",(e)=>{
             <div className='dim_con'>
       <div ref={countryDropDownRef} className="country_dropdown_menu">
         <li><div onClick={()=>setCountry("in")}><CircleFlag countryCode="in" height="35" /> INDIA </div></li>                  
-        <li><div onClick={()=>setCountry("ru")}><CircleFlag countryCode="ru" height="35" /> RUSSIA </div></li>
-        <li><div onClick={()=>setCountry("za")}><CircleFlag countryCode="za" height="35" /> SOUTH AFRICA	</div> </li>
-        <li><div onClick={()=>setCountry("ae")}><CircleFlag countryCode="ae" height="35" /> UNITED ARAB EMIRATES</div> </li>
         <li><div onClick={()=>setCountry("us")}><CircleFlag countryCode="us" height="35" /> UNITED STATES OF AMERICA</div> </li>
-        <li><div onClick={()=>setCountry("jp")}><CircleFlag countryCode="jp" height="35" /> JAPAN</div> </li>
-        <li><div onClick={()=>setCountry("se")}><CircleFlag countryCode="se" height="35" /> SWEDEN</div> </li>
+        <li><div onClick={()=>setCountry("au")}><CircleFlag countryCode="au" height="35" /> AUSTRALIA</div> </li>
+        <li><div onClick={()=>setCountry("gb")}><CircleFlag countryCode="gb" height="35" /> UNITED KINGDOM	</div> </li>
+        <li><div onClick={()=>setCountry("pk")}><CircleFlag countryCode="pk" height="35" /> PAKISTAN</div> </li>
+        <li><div onClick={()=>setCountry("cn")}><CircleFlag countryCode="cn" height="35" /> CHINA</div> </li>
       </div>
       </div>
       )}
